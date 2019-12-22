@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <!--v-pre就是将在该标签下的东西，不做任何处理显示-->
+  <h2>{{message}}</h2>
+  <h2 v-pre>{{message}}</h2>
+</div>
+
+<script src="../js/vue.js"></script>
+<script>
+  const app = new Vue({
+    el: '#app',
+    data: {
+      message: '你好呀'
+    }
+  })
+</script>
+</body>
+</html>
